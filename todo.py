@@ -15,7 +15,10 @@ def show_tasks():
         status = "✓" if task["done"] else "✗"
         print(f"{i}. {task['task']} [{status}]")
     print("=== Message from main branch! ===")
+    # 追加メッセージの修正
     print("=== hello from feature branch! ===")
+    # ↓hotfixでは不要なので削除又は修正
+    print("=== hotfix: 修正済メッセージ ===")
 
 if __name__ == "__main__":
     add_task("Git学習を始める")
