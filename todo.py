@@ -12,8 +12,7 @@ def show_tasks():
     for i, task in enumerate(tasks, 1):
         status = "✓" if task["done"] else "✗"
         print(f"{i}. {task['task']} [{status}]")
-    print("=== Message from main branch! ===")
-    print("=== Hello from feature branch! ===")
+    print(f"=== 合計 {len(tasks)} 件のタスクがあります ===")
 
 if __name__ == "__main__":
     add_task("Git学習を始める")
