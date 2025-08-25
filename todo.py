@@ -1,10 +1,12 @@
 # todo.py
 tasks = []
 
-def add_task():
-    tasks.append({"task":task, "done":done})
+def add_task(task, done=False):
+    tasks.append({"task": task, "done": done})
+    print(f"Added task: {task}")
+    return tasks
 
-def delete_task():
+def delete_task(index):
     if 0 <= index < len(tasks):
         tasks.pop(index)
 
@@ -15,9 +17,9 @@ def show_tasks():
     print("=== Message from main branch! ===")
     print("=== hello from feature branch! ===")
 
-if __name__ == "main":
+if __name__ == "__main__":
     add_task("Git学習を始める")
     add_task("ToDoアプリを作る", done=True)
-    show_tasks
-    delete_task(0)  # 最初のタスクを削除
+    show_tasks()
+    delete_task(0)
     show_tasks()
