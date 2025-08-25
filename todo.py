@@ -12,3 +12,5 @@ if __name__ == "main":
     add_task("Git学習を始める")
     add_task("ToDoアプリを作る")
     show_tasks
+    delete_task(0)  # 最初のタスクを削除
+    show_tasks()
