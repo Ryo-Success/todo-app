@@ -19,6 +19,8 @@ def show_tasks():
     print("=== hello from feature branch! ===")
     # ↓hotfixでは不要なので削除又は修正
     print("=== hotfix: 修正済メッセージ ===")
+    # show_tasksにウェルカムメッセージを追加
+    print("=== Welcome to ToDo App! ===")
 
 if __name__ == "__main__":
     add_task("Git学習を始める")
