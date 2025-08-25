@@ -6,7 +6,7 @@ def add_task(task, done=False):
 
 def delete_task(index):
     if 0 <= index < len(tasks):        
-        tasks.clear()
+        tasks.pop(index)
 
 def show_tasks():
     for i, task in enumerate(tasks, 1):
