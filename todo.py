@@ -6,7 +6,9 @@ def add_task():
 
 def show_tasks():
     for i, task in enumerate(tasks, 1):
-        print(f"{i}. {task}")
+        status = "✓" if task["done"] else "✗"
+        print(f"{i}. {task['task']} [{status}]")
+    print("=== Message from main branch! ===")
 
 if __name__ == "main":
     add_task("Git学習を始める")
